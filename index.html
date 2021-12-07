@@ -10,323 +10,537 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs">
-        <p style="text-align: center">
-          <a href="https://github.com/indentlabs">Smarter writing software</a>
-        </p>
-      </header>
-      <section>
-        <h1>
-          We create awesomely awesome tools for awesome writers.
-        </h1>
-        <p>
-          Indent Labs is a collection of ambitious natural language processing projects
-          aimed squarely at moonshots in the field of writing, particularly at the intersection of
-          artificial intelligence and creativity.
-        </p>
-        <p>
-          Projects in our pipeline include dynamic prose and poetry generation, in-story analysis and analytics,
-          real-time writing guidance and feedback, alternative storytelling mediums, new ways to interact with and
-          bring characters to life, and so much more.
-        </p>
-        <p>
-          The first word processor showed up in the 60's and revolutionized writing through
-          technology. Isn't it time for another shift forward?
-        </p>
+    <header class="border-r-2 border-green-700 w-1/4 fixed bottom-0 left-0 top-0 text-center bg-white pt-40">
+      <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs" class="mx-auto">
+      <p style="text-align: center">
+        <a href="https://github.com/indentlabs" class="brand-green-text">Smarter writing software</a>
+      </p>
+
+      <h2 class="text-xs brand-green-text tracking-widest font-medium title-font mt-32">TABLE OF CONTENTS</h2>
+      <ul class="text-black">
+        <li><a href="#awesome-tools" class="hover:text-green-700">Tools for writers</a></li>
+        <li><a href="#awesome-resources" class="hover:text-green-700">Resources for writers</a></li>
+        <li><a href="#open-source" class="hover:text-green-700">Open-source contributions</a></li>
+        <li><a href="#current-projects" class="hover:text-green-700">Projects in development</a></li>
+        <li><a href="#previous-projects" class="hover:text-green-700">Previous projects</a></li>
+        <li><a href="#the-team" class="hover:text-green-700">The team</a></li>
+      </ul>
+    </header>
+
+    <div class="w-3/5" style="margin-left: 34rem">
+      <section class="text-gray-900 body-font">
+        <div class="container mx-auto flex px-5 pt-48 py-24 mt-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mt-4 mb-4 font-bold text-gray-900">
+              We create <span class="brand-green-text">awesome tools</span>
+              for <span class="brand-green-text">awesome writers</span>.
+            </h1>
+            <p class="mb-4 leading-relaxed">
+              Indent Labs is a collection of ambitious natural language processing projects
+              aimed squarely at moonshots in the field of writing, particularly at the intersection of
+              artificial intelligence and creativity.
+            </p>
+            <!--
+            <p class="mb-4 leading-relaxed">
+              Projects in our pipeline include dynamic prose and poetry generation, in-story analysis and analytics,
+              real-time writing guidance and feedback, alternative storytelling mediums, new ways to interact with and
+              bring characters to life, and so much more.
+            </p>
+            -->
+            <p class="mb-4 leading-relaxed">
+              The first word processor showed up in the 60's and revolutionized writing through
+              technology, but new tools for authors have largely stagnated since then &mdash; even as we've seen
+              a renaissance of creative tooling made available to other disciplines.
+            </p>
+            <p class="my-8 leading-relaxed brand-green-text mx-auto text-2xl tracking-widest">
+              Isn't it about time for another shift forward?
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>
-          Graduated Products
-        </h2>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-20 mx-auto">
+          <div class="flex flex-col w-full mb-6">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">READY FOR YOU TO USE</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Awesome tools for writers</h1>
+          </div>
 
-        <h3>
-          <a href="http://www.notebook.ai" target="_blank">
-            Notebook.ai
+          <a href="https://www.notebook.ai" target="_blank">
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 w-full">
+                <div class="flex border-2 rounded-lg hover:shadow-md border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+                  <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium">
+                      Notebook.ai
+                    </h2>
+                    <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">Worldbuilding + Artificial Intelligence</h2>
+
+                    <p class="leading-relaxed mb-4">
+                      Your new digital notebook grows and collaborates with you as you create magnificent
+                      universes &mdash; and everything within them.
+                    </p>
+                    <p class="leading-relaxed">
+                      Create a universe and track every aspect of its characters, locations,
+                      items, and more. Our AI writing assistant asks questions about your content, helping you
+                      dive deeper than ever into your world.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </a>
-          <small>
-            [<a href="https://github.com/indentlabs/notebook" target="_blank">open source</a>]
-          </small>
-        </h3>
-        <h4>
-          Your notebook is now digital
-          <span class="float-right">Since 2016</span>
-        </h4>
-        <p>
-          Your digital notebook grows and collaborates with you as you create magnificent
-          universes &mdash; and everything within them.
-        </p>
-        <p>
-          Create a universe (literally) and track every aspect of its characters, locations,
-          items, and more. Our AI writing assistant asks questions about your content, helping you
-          dive deeper than ever into your world.
-        </p>
 
-        <h3>
-          <a href="http://www.retort.us/" target="_blank">
-            Retort (open beta)
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-20 mx-auto">
+          <div class="flex flex-col w-full mb-6">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">COMMUNITY-LED</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Available resources</h1>
+          </div>
+
+          <a href="https://fiction.tools" target="_blank">
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 w-full">
+                <div class="flex border-2 rounded-lg hover:shadow-md border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+                  <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium">
+                      Fiction.Tools
+                    </h2>
+                    <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">Tools for every stage of the writing process</h2>
+
+                    <p class="leading-relaxed mb-4">
+                      Fiction.Tools is a growing catalog of helpful tools for authors. Browse the list to
+                      find the right tool for every stage of the writing process and get your perfect story out
+                      just a little faster.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </a>
-          <small>
-            [<a href="https://github.com/indentlabs/retort" target="_blank">open source</a>]
-          </small>
-        </h3>
-        <h4>
-          Natural language generation as a service
-          <span class="float-right">Since 2016</span>
-        </h4>
-        <p>
-          Retort's simple natural-language-generation-as-a-service interface enables any
-          application to generate natural responses to user input and speak back.
-        </p>
-        <p>
-          With over three million word associations and one million online identities
-          indexed, Retort is capable of generating believably contextual text.
-        </p>
 
-        <h3>
-          <a href="https://github.com/indentlabs/dactyl" target="_blank">
-            Dactyl
-          </a>
-          <small>
-            [<a href="https://github.com/indentlabs/dactyl" target="_blank">open source</a>]
-          </small>
-        </h3>
-        <h4>
-          Linguistic fingerprinting as a service
-          <span class="float-right">Since 2016</span>
-        </h4>
-        <p>
-          Dactyl provides on-demand linguistic fingerprinting capable of authorship
-          detection and baseline comparisons with a super-simple API, useful for any
-          linguistic analysis application to utilize.
-        </p>
-        <p>
-          Data applications include plagiarism detection, real-time stylistic guidance
-          while writing, authorship prediction, and improvements to Retort's personalized
-          style mirroring.
-        </p>
+        </div>
       </section>
 
-      <section>
-        <h2>
-          Donate to drive innovation in writing
-        </h2>
-        <p>
-          We're trying to make writing better, and we're doing that with open source code. If you'd like to help out,
-          feel free to make a donation through our Patreon!
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col w-full mb-2">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">AVAILABLE FOR EVERYONE</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Open-source contributions</h1>
+          </div>
+          <p class="mb-8 leading-relaxed">
+            These projects were originally developed to be paid products, but have since been open-sourced and released fully
+            for anyone to use or modify in any way they wish, for free.
+          </p>
 
-          <a href="https://www.patreon.com/bePatron?u=3290626" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-        </p>
+          <div class="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col  border-2 rounded-lg hover:shadow-md border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900">
+                Dactyl
+              </h2>
+              <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                Linguistic Fingerprinting as a Service
+              </h2>
+              <p class="leading-relaxed mb-4">
+                Dactyl provides on-demand linguistic fingerprinting capable of authorship detection and
+                baseline comparisons with a super-simple API, useful for any linguistic analysis application
+                to utilize.
+              </p>
+              <p class="leading-relaxed">
+                Data applications include plagiarism detection, real-time stylistic guidance while writing,
+                authorship prediction, and improvements to Retort's personalized style mirroring.
+              </p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="https://www.github.com/indentlabs/dactyl">
+                View Source Code
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-center lg:w-full mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col border-2 rounded-lg hover:shadow-md border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900">
+                Retort
+              </h2>
+              <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                Language Generation as a Service
+              </h2>
+              <p class="leading-relaxed mb-4">
+                Retort's simple natural-language-generation-as-a-service interface enables any application
+                to generate natural responses to user input and speak back.
+              </p>
+              <p class="leading-relaxed">
+                With over three million word associations and one million online identities indexed, Retort
+                is capable of generating believably contextual text.
+              </p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="https://www.github.com/indentlabs/retort">
+                View Source Code
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+        </div>
       </section>
 
-      <!--
-      <section>
-        <h2>Be notified of new product launches</h2>
-        <p>
-          Some text
-        </p>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 mx-auto">
+          <div class="flex flex-col w-full mb-4">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">LAB EXPERIMENTS</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Projects in development</h1>
+          </div>
+          <p class="mb-6 leading-relaxed">
+            These projects are still in active development. They may or may not ever see the light of day&mdash;<span class="brand-green-text">in other words,
+            whether we can get the cutting-edge tech behind them working well</span>&mdash;but they're here to give you an idea of the kind
+            of projects we're working on.
+          </p>
+
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Project Asimov
+                  </h2>
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Word Super-Processor
+                  </h2>
+
+                  <p class="leading-relaxed mb-4">
+                    Asimov needs a better phrase than "word processor", but that's a great start to
+                    explaining its functionality. Besides all the usual functionality, this editor also
+                    does entity recognition to figure out who, where, when, and what you're writing
+                    about and can show unobtrusive contextual information that's
+                    relevant to what you're writing about&mdash;without breaking your flow.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Project Autoreview
+                  </h2>
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Revising + Artificial Intelligence
+                  </h2>
+
+                  <p class="leading-relaxed mb-4">
+                    Nearly 50% of most first- and second-pass copy editing corrections happen repeatedly
+                    and can be automated with a simple set of rules built on linguistic analysis.
+                  </p>
+                  <p class="leading-relaxed mb-4">
+                    Project Autoreview aims not to replace copy and line editors, but rather to augment their
+                    workflow and free up their time from small corrections to be able to focus on more complex
+                    critique that makes great stories even better.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 w-full">
+              <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col bg-white">
+                <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Project Ghost
+                  </h2>
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Ghostwriting with Artificial Intelligence
+                  </h2>
+
+                  <p class="leading-relaxed mb-4">
+                    Ghost is a web-based editor for ghostwriters and niche writers that builds off of
+                    our rich linguistic fingerprinting. Pick a target author and see in real time&mdash;<span class="brand-green-text">as you write!</span>&mdash;how
+                    similar your writing style is to theirs, and what suggestions Ghost has to match them even closer.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-full mb-4 mt-16">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">INCLUDED FOR POSTERITY</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Previous experiments</h1>
+          </div>
+
+          <p class="mb-6 leading-relaxed">
+            Unfortunately, these projects didn't work out. They'd still be awesome goals to accomplish one day, but right now the technology
+            just isn't there.
+          </p>
+          <div class="flex flex-wrap w-full sm:mx-auto sm:mb-2 -mx-2">
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">
+                  Project Metaprompt
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Writing Prompts with Artificial Intelligence
+                  </h2>
+                </span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">
+                  Project Storygen
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Plot Generation with Artificial Intelligence
+                  </h2>
+                </span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">
+                  Project Convert
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Automatic Manuscript Reformatting
+                  </h2>
+                </span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">
+                  Project Submit
+                  <h2 class="text-sm brand-green-text tracking-widest font-medium title-font -mt-1 mb-3">
+                    Two-sided Publishing Pipeline
+                  </h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
-      -->
 
-      <section>
-        <h2>
-          Active Lab Projects
-        </h2>
-        <p>
-          These projects are still in active development. They may or may not ever see the light of
-          day (depending on whether we can get cutting-edge tech behind them working!), but they're here
-          to give you an idea of the kind of projects Indent Labs is working on.
-        </p>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col w-full mb-2">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font -mb-2">WHY, HELLO THERE!</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our awesome team</h1>
+          </div>
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 md:w-1/2 w-full">
+              <div class="h-full flex items-center bg-white border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Andrew Brown</h2>
+                  <p class="text-gray-500">Creator of Awesome Things</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 md:w-1/2 w-full">
+              <div class="h-full flex items-center bg-white border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Amy Brown</h2>
+                  <p class="text-gray-500">User of Awesome Things</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 md:w-1/2 w-full">
+              <div class="h-full flex items-center bg-white border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Donovan Hernandez</h2>
+                  <p class="text-gray-500">Advisor</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 md:w-1/2 w-full">
+              <div class="h-full flex items-center bg-white border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">Reed Smith</h2>
+                  <p class="text-gray-500">Advisor</p>
+                </div>
+              </div>
+            </div>
 
-        <h3>
-          Ghost
-        </h3>
-        <h4>
-          Write like the stars
-        </h4>
-        <p>
-          Ghost is a web-based editor for ghostwriters and niche writers that builds off of
-          Dactyl's rich linguistic fingerprinting. Pick a target author and see in real time
-          – as you write – how similar your writing style is to theirs, and what suggestions
-          Ghost has to match them even closer.
-        </p>
-
-        <h3>
-          Asimov
-        </h3>
-        <h4>
-          Word super-processor
-        </h4>
-        <p>
-          Asimov needs a better phrase than "word processor", but that's a great start to
-          explaining its functionality. Past all the usual functionality, this editor also
-          does entity recognition to figure out who, where, when, and what you're writing
-          about and can show unobtrusive contextual information that's
-          relevant to what you're writing about&mdash;without breaking your flow.
-        </p>
-
-        <!--
-        <h3>
-          Ankov
-          <small>
-            [<a href="https://github.com/indentlabs/Ankov">source</a>]
-          </small>
-        </h3>
-        <h4>
-          The Internet Beast
-        </h4>
-        <p>
-          We jokingly call Ankov the Internet Beast, but there are some out there who might
-          grudingly agree. Ankov is an entity – a chatbot, a user, a <em>peer</em> – that's
-          free to roam the Internet, collectively learning from and interacting with any and
-          all communities it finds across the web.
-        </p>
-        -->
-
-        <!--
-        <h3>
-          Samson
-          <small>
-            [<a href="https://github.com/indentlabs/samson">source</a>]
-          </small>
-        </h3>
-        <h4>
-          SMS chatbots for all!
-        </h4>
-        <p>
-          Samson provides a white-labeled SMS chatbot for businesses that is easy to set up,
-          user, and maintain. Customers can instantly have their most common questions answered
-          at <em>their</em> convenience, and your employees can step into any conversation at
-          any time to answers questions Samson doesn't know an answer to – yet.
-        </p>
-        -->
-
-        <h3>
-          Prompt
-        </h3>
-        <h4>
-          Writer's block, blocked
-        </h4>
-        <p>
-          Prompt utilizes AI to generate randomized writing prompts, optimized for the writer
-          generating them. Ideas can be pulled from content stored in Notebook.ai, morphed from your
-          existing stories, incorporate trending story topics, or pull from a multitude of other
-          sources specific to you.
-        </p>
-
-        <h3>
-          Story
-        </h3>
-        <h4>
-          Through silicon-tinted glasses
-        </h4>
-        <p>
-          Procedurally generated stories have always been stuff of science fiction, but no longer.
-          From an outline (writer-supplied or generated), Story melds common character
-          archetypes with universal plot arcs to dynamically generate prose for delightful
-          human consumption.
-        </p>
-
-        <h3>
-          Autoreviewer
-        </h3>
-        <h4>
-          Autoreviewer tagline
-        </h4>
-        <p>
-          Nearly 50% of most first- and second-pass copy editing corrections happen repeatedly,
-          and can be automated with a simple set of rules built on Dactyl's analytics.
-        </p>
-        <p>
-          Autoreviewer aims not to replace copy and line editors, but rather to augment their
-          workflow and free up their time from small corrections to focus on more complex
-          critique that makes great stories even better.
-        </p>
-
-        <h3>
-          Convert
-        </h3>
-        <h4>
-          Manuscript formatting as a service
-        </h4>
-        <p>
-          Every publisher wants your manuscript formatted <em>slightly</em> differently. Different
-          file formats, headers, footers, page sizes, margins, titles, and so on. Convert does
-          that all for you; just upload your manuscript, choose which publishers you're submitting to,
-          and it's done!
-        </p>
-
-        <h3>
-          Submit
-        </h3>
-        <h4>
-          The first publishing funnel for publishers <em>and</em> writers
-        </h4>
-        <p>
-          Submit walks writers through the arduous process of preparing their manuscripts for
-          publication. After revising, reviewing, formatting, and soliciting publishers, authors can
-          track their submission status and estimated response time. Submit handles the
-          typically required snail-mail correspondence for you and provides a simple web interface
-          for your new career as an author.
-        </p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+              Indent Labs is a decentralized, asynchronous team of open source contributors and volunteers. Some contributors may not be shown here; you
+              can always see an up-to-date list of <a href="https://github.com/orgs/indentlabs/people" class="brand-green-text">contributors on GitHub</a>.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <!--
-      <section>
-        <h2>
-          Powered by Indent Labs
-        </h2>
-        <p>
-          The following software are proudly powered by Indent software, APIs, or resources.
-        </p>
-
-        <ul>
-          <li><a href="http://hl3.herokuapp.com">The HL3 Confirmer</a>, built with Dactyl</li>
-        </ul>
-
-        <h3>
-          <a href="https://github.com/indentlabs/indentlabs.github.io/edit/master/index.html">Be next</a>
-        </h3>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">
+            Donate to drive<br />
+            <span class="brand-green-text">innovation in writing</span>
+          </h2>
+          <div class="md:w-3/5 md:pl-6">
+            <p class="leading-relaxed text-base">
+              We're trying to make writing better and we're doing that with open-source code. If you'd like to help out,
+              feel free to make a donation through our Patreon!
+            </p>
+            <div class="flex md:mt-4 mt-6">
+              <a href="https://www.patreon.com/bePatron?u=3290626" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+            </div>
+          </div>
+        </div>
       </section>
-      -->
 
-      <!--
-      <section>
-        <h2>
-          Starred software
-        </h2>
-        <p>
-          We've also got an eye on these projects and will contribute when possible. In the meantime,
-          if you're not inspired to contribute to one of our projects, you should consider checking out
-          one of the below projects!
-        </p>
-
-        <ul>
-          <li><a href="https://github.com/rtfeldman/dreamwriter">dreamwriter</a> - Streamlined long-form writing software. Written in Elm.</li>
-          <li><a href="https://github.com/m8ker/machinestories">machinestories</a> - A random story generator. A great brainstorming tool for writers, artists, and other creatives to get the juices flowing.</li>
-          <li><a href="https://github.com/bilalq/Tranquillity-Editor">Tranquility Editor</a> - An IDE for poets</li>
-          <li><a href="https://github.com/billtowin/writerator">writerator</a> - Writerator is a command line tool for analyzing English language text and generating randomized poetry, such as haikus and poems.</li>
-          <li><a href="https://github.com/flikore/writerstrail">writerstrail</a> - A tool for writers to keep track of their progress (inspired by NaNoWriMo charts)</li>
-        </ul>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
+          <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+            <h2 class="text-xs brand-green-text tracking-widest font-medium title-font">EXCITED? US TOO!</h2>
+            <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-900">Follow us for updates</h1>
+          </div>
+          <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+            <a href="https://www.twitter.com/IndentLabs">
+              <button class="bg-white inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                <span class="mx-2 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-600 mb-1">Twitter</span>
+                  <span class="title-font font-medium">@IndentLabs</span>
+                </span>
+              </button>
+            </a>
+            <a href="https://www.facebook.com/IndentLabs/">
+              <button class="bg-white inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                <span class="mx-2 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-600 mb-1">Facebook</span>
+                  <span class="title-font font-medium">@IndentLabs</span>
+                </span>
+              </button>
+            </a>
+            <a href="https://www.pinterest.com/notebookai/">
+              <button class="bg-white inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                <span class="mx-2 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-600 mb-1">Pinterest</span>
+                  <span class="title-font font-medium">@NotebookAI</span>
+                </span>
+              </button>
+            </a>
+          </div>
+        </div>
       </section>
-      -->
 
-      <section>
-        <h2>
-          Follow us for updates
-        </h2>
-        <ul>
-          <li><a href="https://twitter.com/IndentLabs">Twitter</a></li>
-          <li><a href="https://www.facebook.com/IndentLabs/">Facebook</a></li>
-          <li><a href="https://www.pinterest.com/notebookai/">Pinterest</a></li>
-        </ul>
-      </section>
+      <div class="mb-64">&nbsp;</div>
     </div>
+
+    <!--
+    <section>
+      <h2>Be notified of new product launches</h2>
+      <p>
+        Some text
+      </p>
+    </section>
+    -->
+
+    <section class="text-gray-600 body-font">
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs" class="h-10">
+            <span class="ml-3 text-xl">Indent Labs, LLC</span>
+          </a>
+          <p class="text-sm text-gray-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+            &copy; 2015 &mdash; 2021 Indent Labs, LLC
+          </p>
+          <!--
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+          -->
+        </div>
+      </footer>
+    </section>
 
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">

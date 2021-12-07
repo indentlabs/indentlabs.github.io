@@ -1,33 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding-top: 50px;
   font:20px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
   background: #298e7d0a;
 }
 
-img {
-  max-width:100%;
-}
-
-header {
-  left: 0;
-  top:0;
-  bottom: 0;
-  width:30%;
-  position:fixed;
-  text-align: center;
-  background: white;
-  padding-top: 50px;
-  margin-right: 50px;
-}
-
-header img {
-  margin: 0 auto;
-}
-
-section {
-  margin-left: 30%;
-  padding: 0 50px;
+.brand-green-text {
+  color: #298E7E;
 }
