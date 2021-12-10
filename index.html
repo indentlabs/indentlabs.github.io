@@ -14,15 +14,22 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header class="border-r-2 border-green-700 w-1/4 fixed bottom-0 left-0 top-0 text-center border-opacity-50 bg-white pt-40">
+  <body class="lg:ml-64">
+    <header
+      class="border-green-700 border-opacity-50 bg-white text-center pt-40
+        md:w-full pb-32
+        lg:w-1/4 lg:fixed lg:bottom-0 lg:left-0 lg:top-0
+        md:border-b-4 lg:border-b-0
+        lg:border-r-2 md:border-r-0
+        "
+    >
       <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs" class="mx-auto">
       <p style="text-align: center">
         <a href="https://github.com/indentlabs" class="brand-green-text">Smarter writing software</a>
       </p>
 
       <h2 class="text-xs brand-green-text tracking-widest font-medium title-font mt-32">TABLE OF CONTENTS</h2>
-      <ul class="text-black">
+      <ul class="text-black lg:px-8">
         <li><a href="#awesome-tools" class="hover:text-green-700">Tools for writers</a></li>
         <li><a href="#awesome-resources" class="hover:text-green-700">Resources for writers</a></li>
         <li><a href="#open-source" class="hover:text-green-700">Open-source contributions</a></li>
@@ -32,7 +39,7 @@
       </ul>
     </header>
 
-    <div class="w-3/5" style="margin-left: 34rem">
+    <div class="lg:w-3/4 md:w-full lg:right-0 lg:absolute lg:px-32">
       <section class="text-gray-900 body-font">
         <div class="container mx-auto flex px-5 pt-48 py-24 mt-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -206,7 +213,6 @@
           
         </div>
       </section>
-
 
       <section class="text-gray-600 body-font" id="current-projects">
         <div class="container px-5 mx-auto">
@@ -482,6 +488,49 @@
       </section>
 
       <div class="mb-64">&nbsp;</div>
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <!--
+            <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs" class="h-10">
+            -->
+            <span class="text-red-300 font-mono text-4xl">
+              &hearts;
+            </span>
+            <span class="ml-3 text-xl">Indent Labs</span>
+          </a>
+          <p class="text-sm text-gray-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+            &copy; 2015 &mdash; 2021 Indent Labs, LLC
+          </p>
+          <!--
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+          -->
+        </div>
+      </footer>
     </div>
 
     <!--
@@ -492,49 +541,6 @@
       </p>
     </section>
     -->
-
-    <footer class="text-gray-600 body-font w-3/5" style="margin-left: 32rem">
-      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <!--
-          <img src="https://github.com/indentlabs/indentlabs.github.io/blob/master/images/indent.jpg?raw=true" alt="Indent Labs" class="h-10">
-          -->
-          <span class="text-red-300 font-mono text-4xl">
-            &hearts;
-          </span>
-          <span class="ml-3 text-xl">Indent Labs</span>
-        </a>
-        <p class="text-sm text-gray-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          &copy; 2015 &mdash; 2021 Indent Labs, LLC
-        </p>
-        <!--
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-        -->
-      </div>
-    </footer>
 
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
